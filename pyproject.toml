@@ -5,6 +5,3 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = ["rich>=13.8.1"]
-
-[tool.uv.sources]
-tracecat = { git = "https://github.com/TracecatHQ/tracecat.git" }
