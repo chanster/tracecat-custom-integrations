@@ -8,7 +8,7 @@ test_secret = RegistrySecret(name="test_secret", keys=["KEY"])
     display_group="Greetings",
     description="This is a function that says hello world",
     secrets=[test_secret],
-    namespace="greetings",
+    namespace="integrations.greetings",
     version="1.0.0",
 )
 def say_hello_world():
@@ -21,7 +21,7 @@ def say_hello_world():
     display_group="Greetings",
     description="This is a function that says goodbye",
     secrets=[test_secret],
-    namespace="greetings",
+    namespace="integrations.greetings",
     version="1.0.0",
 )
 def say_goodbye():
