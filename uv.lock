@@ -1536,11 +1536,19 @@ name = "test-remote-registry"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "rich" },
+]
+
+[package.optional-dependencies]
+dev = [
     { name = "tracecat" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "tracecat", git = "https://github.com/TracecatHQ/tracecat.git" }]
+requires-dist = [
+    { name = "rich", specifier = ">=13.8.1" },
+    { name = "tracecat", marker = "extra == 'dev'", git = "https://github.com/TracecatHQ/tracecat.git" },
+]
 
 [[package]]
 name = "text-unidecode"
