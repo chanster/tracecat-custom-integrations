@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-udfs/__init__.py
-udfs/greetings.py
-udfs.egg-info/PKG-INFO
-udfs.egg-info/SOURCES.txt
-udfs.egg-info/dependency_links.txt
-udfs.egg-info/requires.txt
-udfs.egg-info/top_level.txt

@@ -1,4 +1,0 @@
-rich>=13.8.1
-
-[dev]
-tracecat@ git+https://github.com/TracecatHQ/tracecat.git
