@@ -1,4 +1,4 @@
-from tracecat.registry import registry, RegistrySecret
+from tracecat_registry import registry, RegistrySecret
 
 test_secret = RegistrySecret(name="test_secret", keys=["KEY"])
 
@@ -9,7 +9,6 @@ test_secret = RegistrySecret(name="test_secret", keys=["KEY"])
     description="This is a function that says hello world",
     secrets=[test_secret],
     namespace="integrations.greetings",
-    version="1.0.0",
 )
 def say_hello_world():
     print("Hello World")
@@ -22,7 +21,6 @@ def say_hello_world():
     description="This is a function that says goodbye",
     secrets=[test_secret],
     namespace="integrations.greetings",
-    version="1.0.0",
 )
 def say_goodbye():
     print("Goodbye")
