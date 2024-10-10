@@ -12,7 +12,9 @@ test_secret = RegistrySecret(name="test_secret", keys=["KEY"])
 )
 def say_hello_world():
     print("Hello World")
-    return {"message": "Said hello world successfully"}
+    return {
+        "message": "Said hello world successfully. This is a test that we can update the udf."
+    }
 
 
 @registry.register(
