@@ -13,7 +13,7 @@ test_secret = RegistrySecret(name="test_secret", keys=["KEY"])
 def say_hello_world():
     print("Hello World")
     return {
-        "message": "Said hello world successfully. This is a test that we can update the udf."
+        "message": "Said hello world successfully. This is a test that we can update the udf. And I've updated this again."
     }
 
 
