@@ -41,5 +41,5 @@ def say_goodbye():
 def different_goodbye():
     return {
         "message": "Said different goodbye successfully.  Update 16. Update 17. Update 18. Update 19.",
-        "secret": secrets.get("test_secret"),
+        "secret": secrets.get("KEY"),
     }
