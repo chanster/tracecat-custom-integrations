@@ -27,5 +27,5 @@ def say_hello_world():
 def say_goodbye():
     print("Goodbye")
     return {
-        "message": "Said goodbye successfully. Update 1. Update 2. Update 3. Update 4."
+        "message": "Said goodbye successfully. Update 1. Update 2. Update 3. Update 4. Update 5."
     }
