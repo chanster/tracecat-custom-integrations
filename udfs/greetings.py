@@ -32,14 +32,14 @@ def say_goodbye():
 
 
 @registry.register(
-    default_title="Say Goodbye",
+    default_title="Different Goodbye",
     display_group="Greetings",
-    description="This is a function that says goodbye",
+    description="This is a function that says different goodbye",
     secrets=[test_secret],
     namespace="integrations.greetings",
 )
 def different_goodbye():
     return {
-        "message": "Said goodbye successfully.  Update 16. Update 17. Update 18. Update 19.",
+        "message": "Said different goodbye successfully.  Update 16. Update 17. Update 18. Update 19.",
         "secret": secrets.get("test_secret"),
     }
