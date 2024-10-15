@@ -16,18 +16,6 @@ def say_hello_world():
 
 
 @registry.register(
-    default_title="Say Goodbye",
-    display_group="Greetings",
-    description="This is a function that says goodbye",
-    secrets=[test_secret],
-    namespace="integrations.greetings",
-)
-def say_goodbye():
-    print("Goodbye")
-    return {"message": "Said goodbye successfully.  Update 21."}
-
-
-@registry.register(
     default_title="Different Goodbye",
     display_group="Greetings",
     description="This is a function that says different goodbye",
