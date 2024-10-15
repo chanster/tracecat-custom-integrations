@@ -12,9 +12,7 @@ test_secret = RegistrySecret(name="test_secret", keys=["KEY"])
 )
 def say_goodbye():
     print("Goodbye")
-    return {
-        "message": "Said goodbye successfully.  Update 16. Update 17. Update 18. Update 19."
-    }
+    return {"message": "Said goodbye successfully.  Update 20."}
 
 
 @registry.register(
@@ -26,6 +24,6 @@ def say_goodbye():
 )
 def different_goodbye():
     return {
-        "message": "Said different goodbye successfully.  Update 16. Update 17. Update 18. Update 19.",
+        "message": "Said different goodbye successfully.  Update 20.",
         "secret": secrets.get("KEY"),
     }
