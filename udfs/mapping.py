@@ -24,5 +24,6 @@ NUM_MAP = {
 )
 def map_number(word: Annotated[str, Field(description="The word to map to a number")]):
     if word not in NUM_MAP:
-        raise ValueError(f"Word {word} not found in mapping")
+        # You can throw an error to customize the error message that shows up in the UI.
+        raise ValueError(f"Word {word!r} not found in mapping")
     return NUM_MAP[word]
