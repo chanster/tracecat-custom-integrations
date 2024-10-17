@@ -4,4 +4,4 @@ __version__ = "0.1.0"
 
 from . import greetings
 
-__all__ = ["greetings"]
+__all__ = ["greetings", "mapping"]
