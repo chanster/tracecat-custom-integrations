@@ -1,6 +1,6 @@
-# Remote Registry Template
+# Custom Registry Template
 
-This repository is a template for creating a remote registry for Tracecat.
+This repository is a template for creating a custom registry for Tracecat.
 
 ## Getting Started
 
