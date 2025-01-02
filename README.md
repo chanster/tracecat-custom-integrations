@@ -9,7 +9,7 @@ This repository is a template for creating a custom registry for Tracecat.
 
 ```
 # In tracecat/.env
-TRACECAT__REMOTE_REPOSITORY_URL=git+ssh://git@github.com/${MY_ORG}/${MY_REPO}.git
+TRACECAT__REMOTE_REPOSITORY_URL=git+ssh://git@{your-git-host e.g. github.com}/${MY_ORG}/${MY_REPO}.git
 TRACECAT__REMOTE_REPOSITORY_PACKAGE_NAME=${MY_PACKAGE_NAME}
 
 # Note: ${MY_ORG} and ${MY_REPO} are placeholders for your organization and repository name
