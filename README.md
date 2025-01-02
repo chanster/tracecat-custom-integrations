@@ -17,5 +17,5 @@ TRACECAT__REMOTE_REPOSITORY_PACKAGE_NAME=${MY_PACKAGE_NAME}
 ```
 
 3. Create an public/private SSH key pair and add the public key to your repository deploy keys
-4. Add org-level secret called `github-ssh-key` with the private key
+4. Add org-level secret called `git-ssh-key` with the private key
 5. Sync the repository in the registry table
