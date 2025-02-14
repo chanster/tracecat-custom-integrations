@@ -3,24 +3,20 @@ requires = ["hatchling >= 1.13.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "custom_actions"
+name = "custom_actions"  # This must be the same name as your package
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dynamic = ["version"]
-dependencies = []
-
-[tool.hatch.metadata]
-allow-direct-references = true
+dependencies = []  # Add your pip dependencies here
 
 [tool.hatch.version]
 path = "custom_actions/__init__.py"
 
+[tool.hatch.metadata]
+allow-direct-references = true
+
 [tool.hatch.build.targets.wheel]
 packages = ["custom_actions"]
+# Include YAML templates into pip package
 include = ["/custom_actions", "/custom_actions/**/*.yml"]
-
-[project.optional-dependencies]
-dev = [
-    "tracecat_registry @ git+https://github.com/TracecatHQ/tracecat#subdirectory=registry&egg=tracecat_registry",
-]
