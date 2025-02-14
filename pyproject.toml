@@ -18,11 +18,10 @@ packages = ["custom_actions"]
 # Include YAML templates in pip package
 include = ["/custom_actions", "/custom_actions/**/*.yml"]
 
-## Uncomment to enable type hints for vscode
-# [tool.hatch.metadata]
-# allow-direct-references = true
-#
-# [project.optional-dependencies]
-# dev = [
-#     "tracecat_registry @ git+https://github.com/TracecatHQ/tracecat#subdirectory=registry&egg=tracecat_registry",
-# ]
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[project.optional-dependencies]
+dev = [
+    "tracecat_registry @ git+https://github.com/TracecatHQ/tracecat#subdirectory=registry&egg=tracecat_registry",
+]
