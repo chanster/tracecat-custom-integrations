@@ -18,6 +18,7 @@ This starter kit contains:
 - You can safely delete example Python integrations files and templates under `custom_actions/`
 - **Do not** remove `pyproject.toml`. This is required for your Tracecat instance to install and run your custom integrations.
 - You can add 3rd party `pip` packages (e.g. `psycopg==3.2.4`) in the `pyproject.toml` file under [`project.dependencies` here](https://github.com/TracecatHQ/custom-integrations-starter-kit/blob/main/pyproject.toml#L11).
+- The `dev` dependencies [line](https://github.com/TracecatHQ/custom-integrations-starter-kit/blob/main/pyproject.toml#L26) in `pyproject.toml` installs the `tracecat_registry` package. This allows you to test your Python functions locally and also enables linting.
 
 ### Renaming the package
 If you want to rename `custom_actions` to `<your_registry_name>`, you must:
