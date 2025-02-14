@@ -13,10 +13,16 @@ dependencies = []  # Add your pip dependencies here
 [tool.hatch.version]
 path = "custom_actions/__init__.py"
 
-[tool.hatch.metadata]
-allow-direct-references = true
-
 [tool.hatch.build.targets.wheel]
 packages = ["custom_actions"]
-# Include YAML templates into pip package
+# Include YAML templates in pip package
 include = ["/custom_actions", "/custom_actions/**/*.yml"]
+
+## Uncomment to enable type hints for vscode
+# [tool.hatch.metadata]
+# allow-direct-references = true
+#
+# [project.optional-dependencies]
+# dev = [
+#     "tracecat_registry @ git+https://github.com/TracecatHQ/tracecat#subdirectory=registry&egg=tracecat_registry",
+# ]
