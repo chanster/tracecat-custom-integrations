@@ -10,7 +10,7 @@ This starter kit contains:
 ## Development
 
 > [!IMPORTANT]
-> Check out the tutorial on building and syncing custom integrations in our [docs here](https://tracecat.com/docs/tutorials/custom-integrations).
+> Check out the tutorial on building and syncing custom integrations in our [docs here](https://docs.tracecat.com/tutorials/custom-integrations).
 
 **Note:**
 - You can safely delete example Python integrations files and templates under `custom_actions/`
