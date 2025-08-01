@@ -22,7 +22,4 @@ include = ["/custom_actions", "/custom_actions/**/*.yml"]
 allow-direct-references = true
 
 [project.optional-dependencies]
-dev = [
-    "tracecat @ git+https://github.com/TracecatHQ/tracecat",
-    "tracecat_registry[cli] @ git+https://github.com/TracecatHQ/tracecat#subdirectory=registry&egg=tracecat_registry",
-]
+dev = ["tracecat @ git+https://github.com/TracecatHQ/tracecat"]
