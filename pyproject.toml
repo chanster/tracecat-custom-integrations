@@ -3,20 +3,20 @@ requires = ["hatchling >= 1.13.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "custom_actions"  # This must be the same name as your package
+name = "chanster_registry"  # This must be the same name as your package
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<3.13"
 dynamic = ["version"]
 dependencies = []  # Add your pip dependencies here
 
 [tool.hatch.version]
-path = "custom_actions/__init__.py"
+path = "chanster_registry/__init__.py"
 
 [tool.hatch.build.targets.wheel]
-packages = ["custom_actions"]
+packages = ["chanster_registry"]
 # Include YAML templates in pip package
-include = ["/custom_actions", "/custom_actions/**/*.yml"]
+include = ["/chanster_registry", "/chanster_registry/**/*.yml"]
 
 [tool.hatch.metadata]
 allow-direct-references = true
